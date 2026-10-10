@@ -1,0 +1,20 @@
+name: FlyPlugin
+version: 1.0.0
+main: com.example.flyplugin.FlyPlugin
+api-version: '1.21'
+author: Greenbot5454
+description: A Fly Plugin For Minecraft
+
+commands:
+  fly:
+    description: Toggle fly mode
+    usage: /fly [player]
+    permission: flyplugin.fly
+
+permissions:
+  flyplugin.fly:
+    description: Allows using /fly
+    default: op
+  flyplugin.fly.others:
+    description: Allows toggling fly for other players
+    default: op
