@@ -1,0 +1,29 @@
+name: FlyPlugin
+version: 1.21
+main: ir.Greenbot.flyplugin.FlyPlugin
+api-version: '1.21'
+author: Greenbot5454
+description: A simple fly plugin
+website: https://github.com/Greenbot5454/FlyPlugin
+
+commands:
+  fly:
+    description: Toggle fly mode
+    usage: /fly [player]
+    permission: flyplugin.fly
+    permission-message: You don't have permission to use this command!
+  flyreload:
+    description: Reload the FlyPlugin config
+    usage: /flyreload
+    permission: flyplugin.reload
+
+permissions:
+  flyplugin.fly:
+    description: Allows using /fly
+    default: op
+  flyplugin.fly.others:
+    description: Allows toggling fly for other players
+    default: op
+  flyplugin.reload:
+    description: Allows reloading the plugin
+    default: op
